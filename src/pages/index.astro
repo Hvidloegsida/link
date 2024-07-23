@@ -3,9 +3,30 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 ---
 <MainLayout title="Titel">
-	<article class="flex items-center justify-center">
-		<header>
-			<img src="" alt="">
+	<article class="flex items-center justify-center flex-col">
+		<header class="mb-11">
+			<img src="/Banner.png" alt="">
 		</header>
+
+		<section>
+			<ul class="font-exo space-y-5">
+				<li class="grid grid-cols-2 gap-11 justify-between">
+					<a class="text-[#FF319E] text-xl"  href="nijiida.etsy.com">Webshop</a>
+					<img class="w-9" src="/shop.png" alt="">
+				</li>
+				<li class="grid grid-cols-2 gap-11 justify-between">
+					<a class="text-[#FF319E] text-xl" href="https://www.instagram.com/niji.ida/">Instagram</a>
+					<img class="w-9" src="/ig.png" alt="">
+				</li>
+				<li class="grid grid-cols-2 gap-11 justify-between">
+					<a class="text-[#FF319E] text-xl" href="https://www.tiktok.com/@niji.ida">Tiktok</a>
+					<img class="w-9" src="/tiktok.png" alt="">
+				</li>
+				<li class="grid grid-cols-2 gap-11 justify-between">
+					<a class="text-[#FF319E] text-xl" href="mailto:niji.ida@hotmail.com">Mail</a>
+					<img class="w-9" src="/mail.png" alt="">
+				</li>
+			</ul>
+		</section>
 	</article>
 </MainLayout>
